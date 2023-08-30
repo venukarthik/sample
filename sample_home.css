@@ -1,0 +1,12 @@
+/* Existing styles for navbar... */
+
+.background-container {
+    background-image: url("images/intro.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh; /* Adjust this value to fit your design */
+  }
+  
+  /* Other styles... */
+  

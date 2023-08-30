@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sample.css">
+  <title>LPDC LOG BOOK</title>
+</head>
+
+<body>
+  <header>
+  <a href="sample_home.html">
+    <img src="images/images.png" alt="Header Image">
+  </a>
+  </header>
+
+  <h1>LPDC LOG BOOK</h1>
+
+  <div class="container">
+    <div class="left-column">
+      <div class="input-group">
+        <h3>DATE: <span id="currentDate"></span></h3>
+      </div>
+      <form id="machineForm">
+        <!-- ... (other fields) ... -->
+
+        <label>SAL Code for Line Incharge:</label>
+        <div class="input-group">
+          <input type="text" name="salCodeForLineIncharge1">
+          <input type="text" name="salCodeForLineIncharge2">
+        </div>
+
+        <label>Name of the Employee:</label>
+        <div class="input-group">
+          <input type="text" name="employeeName1">
+          <input type="text" name="employeeName2">
+        </div>
+
+        <label>Model_Mold:</label>
+        <div class="input-group">
+          <input type="text" name="modelMold1">
+          <input type="text" name="modelMold2">
+        </div>
+
+        <label>Target:</label>
+        <div class="input-group">
+          <input type="text" name="target1">
+          <input type="text" name="target2">
+        </div>
+
+        <label>Time (Die Stop and Die Start):</label>
+        <div class="input-group">
+
+          <input type="text" name="dieStopStart1">
+          <input type="text" name="dieStopStart2">
+        </div>
+
+        <label>Number of Shifts:</label>
+        <div class="input-group">
+          <input type="text" name="shifts1">
+          <input type="text" name="shifts2">
+        </div>
+
+        <label>LPDC Rejects:</label>
+
+
+        <div class="lpdc-rejects">
+          <div class="lpdc-rejects-item">
+            <input type="text" name="lpdcRejectsHC1" placeholder="H/C">
+            <input type="text" name="lpdcRejectsHC2" placeholder="H/C">
+          </div>
+          <div class="lpdc-rejects-item">
+            <input type="text" name="lpdcRejectsFC1" placeholder="F/C">
+            <input type="text" name="lpdcRejectsFC2" placeholder="F/C">
+          </div>
+          <div class="lpdc-rejects-item">
+            <input type="text" name="lpdcRejectsPR1" placeholder="P/R">
+            <input type="text" name="lpdcRejectsPR2" placeholder="P/R">
+          </div>
+        </div>
+
+        <label>NDT:</label>
+        <div class="input-group">
+          <div class="ndt-inputs">
+            <div class="ndt-accepted">
+              <label>Accepted</label><input type="checkbox" name="ndtAccepted1">
+              <input type="checkbox" name="ndtAccepted2">
+            </div>
+            <div class="ndt-rejected">
+              <label>Rejected</label><input type="checkbox" name="ndtRejected1">
+              <input type="checkbox" name="ndtRejected2">
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the same pattern for the left side -->
+      </form>
+    </div>
+
+    <div class="right-column">
+      <h3>Power Failure Details:</h3>
+      <label>HOLD:</label>
+      <div class="hold-inputs">
+        <input type="text" name="holdBuffing1" placeholder="Buffing">
+        <input type="text" name="holdBuffing1" placeholder="Buffing">
+      </div>
+      <div class="hold-inputs">
+        <input type="text" name="holdXRay2" placeholder="X-Ray">
+        <input type="text" name="holdXRay2" placeholder="X-Ray">
+      </div>
+      <div class="hold-inputs">
+        <input type="text" name="holdCleared1" placeholder="Cleared">
+        <input type="text" name="holdCleared1" placeholder="Cleared">
+      </div>
+      <div class="hold-inputs">
+        <input type="text" name="holdRejected1" placeholder="Rejected">
+        <input type="text" name="holdRejected1" placeholder="Rejected">
+      </div>
+
+      <label>Skin Cut Reject:</label>
+      <div class="input-group">
+        <input type="text" name="skinCutReject1">
+        <input type="text" name="skinCutReject2">
+      </div>
+
+      <label>Rework Time:</label>
+      <div class="input-group">
+        <input type="text" name="reworkTime1">
+        <input type="text" name="reworkTime2">
+      </div>
+
+      <label>BREAKDOWNS:</label>
+        <div class="hold-inputs">
+          <input type="text" name="breakdownsElec1" placeholder="Elec">
+          <input type="text" name="breakdownsElec2" placeholder="Elec">
+        </div>
+        <div class="hold-inputs">
+          <input type="text" name="breakdownsMech1" placeholder="Mech">
+          <input type="text" name="breakdownsMech2" placeholder="Mech">
+        </div>
+
+      <label>DELAYS:</label>
+
+
+      <div class="hold-inputs">
+        <input type="text" name="delaysMetal1" placeholder="Metal">
+        <input type="text" name="delaysMetal1" placeholder="Metal">
+      </div>
+      <div class="hold-inputs">
+        <input type="text" name="delaysDie2" placeholder="Die">
+        <input type="text" name="delaysDie2" placeholder="Die">
+
+      </div>
+      <div class="hold-inputs">
+        <input type="text" name="delaysForklift1" placeholder="Forklift">
+        <input type="text" name="delaysForklift1" placeholder="Forklift">
+      </div>
+
+
+      <label>Power Failure :</label>
+
+      <div class="hold-inputs">
+        <input type="text" name="powerFailureDetails1">
+        <input type="text" name="powerFailureDetails2">
+      </div>
+
+
+      <label>Remarks:</label>
+
+      <div class="hold-inputs">
+        <input type="text" name="remarks1">
+        <input type="text" name="remarks2">
+      </div>
+    </div>
+    
+    
+  </div>
+  <div class="button-container">
+      <button type="submit">Submit</button>
+  </div>
+ 
+
+</body>
+<script src="sample.js"></script>
+</html>

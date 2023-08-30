@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#D3D3D3;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  background-color:#6E8BAC;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 80%; /* Set a fixed width */
+  margin: 0 auto; /* Center the container horizontally */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    width: 100%; /* Expand to full width in phone screen mode */
+    padding: 0px; /* Reduce padding for phone screen mode */
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center the content horizontally */
+    width: 95%;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0;
+    padding: 10px;
+    width: 90%;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+label {
+  flex: 1;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Allow input fields to stretch across their container */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  margin-top: 5px; /* Add a little space between input fields */
+}
+
+
+
+
+.lpdc-rejects {
+  display: flex;
+  flex-direction: column;
+}
+
+.lpdc-rejects-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.ndt-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.ndt-accepted,
+.ndt-rejected {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  flex-direction: row;
+}
+
+.ndt-accepted label,
+.ndt-rejected label {
+  width: 70px;
+  /* Adjust as needed */
+}
+
+.hold-inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
